@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shishir | AI Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:#f6f7fb;color:#222;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 60px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+nav h2{color:#4f46e5;}
+nav a{text-decoration:none;color:#333;margin-left:25px;font-weight:500;}
+nav a:hover{color:#4f46e5;}
+.hero{max-width:1100px;margin:80px auto;padding:0 20px;display:flex;align-items:center;gap:40px;}
+.hero-text{flex:1;}
+.hero-text h1{font-size:42px;margin-bottom:10px;}
+.hero-text span{color:#4f46e5;}
+.hero-text h3{font-size:22px;color:#555;height:28px;margin-bottom:20px;}
+.hero-text p{color:#666;line-height:1.7;margin-bottom:30px;}
+.hero-text a{display:inline-block;padding:12px 28px;background:#4f46e5;color:#fff;text-decoration:none;border-radius:30px;}
+.hero-img{flex:1;text-align:center;}
+.hero-img img{width:280px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.15);}
+footer{margin-top:80px;padding:25px;text-align:center;background:#fff;color:#777;font-size:14px;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>SHISHIR</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Samiya Kanon Shishir </span></h1>
+    <h3 id="typing"></h3>
+    <p>I am an AI Developer focused on Machine Learning, Deep Learning and intelligent systems. I build smart, data-driven solutions for real-world problems.</p>
+    <a href="skills.html">View My Skills</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://scontent.fdac24-2.fna.fbcdn.net/v/t51.75761-15/491462009_17935673535011035_9208286553619377929_n.webp?stp=dst-jpg_s552x414_tt6&_nc_cat=108&ccb=1-7&_nc_sid=714c7a&_nc_ohc=QFa3aZgjLZMQ7kNvwHGWGoB&_nc_oc=Adk2y_wLTRFC_75UqeRHQxIW0AdO1Bc4gSYrVbHv2UNOJHeaWZRlcFaJl2d-KUIjxLs&_nc_zt=23&_nc_ht=scontent.fdac24-2.fna&_nc_gid=BONiopUy-N313Rmfa4lXIg&oh=00_Afk5dTgW7HyZVcWXI-qzMc7C2SgfDDsFPoDJ0oXSJ5JV3w&oe=6947EE77">
+  </div>
+</section>
+
+<footer>© 2025 Shishir | AI Developer</footer>
+
+<script>
+const texts = ["AI Developer","Machine Learning Engineer","Deep Learning Enthusiast","Python Programmer"];
+let i = 0,j=0,currentText="",isDeleting=false;
+const typing = document.getElementById("typing");
+function type(){if(i<texts.length){if(!isDeleting && j<=texts[i].length){currentText=texts[i].substring(0,j++);}
+else if(isDeleting && j>0){currentText=texts[i].substring(0,j--);}
+typing.innerHTML=currentText;
+if(j===texts[i].length)isDeleting=true;
+if(isDeleting && j===0){isDeleting=false;i++;}
+}setTimeout(type,120);}
+type();
+</script>
+</body>
+</html>

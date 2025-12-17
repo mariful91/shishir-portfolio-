@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills | Shishir</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:#f6f7fb;color:#222;}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 60px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+nav h2{color:#4f46e5;}
+nav a{text-decoration:none;color:#333;margin-left:25px;font-weight:500;}
+nav a:hover{color:#4f46e5;}
+
+.container{max-width:1100px;margin:80px auto;padding:0 20px;}
+h1{text-align:center;margin-bottom:50px;}
+
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+
+.skill-card{background:#fff;padding:30px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.06);transition:0.3s;}
+.skill-card:hover{transform:translateY(-6px);}
+.skill-card h3{margin-bottom:12px;color:#4f46e5;}
+.skill-card p{color:#555;font-size:15px;line-height:1.6;}
+
+footer{margin-top:80px;padding:25px;text-align:center;background:#fff;color:#777;font-size:14px;}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Shishir</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- Skills Section -->
+<div class="container">
+  <h1>AI Developer Skills</h1>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Python Programming</h3>
+      <p>Strong knowledge of Python for AI, data processing, and automation.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Machine Learning</h3>
+      <p>Experience with supervised & unsupervised learning, model training and evaluation.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Deep Learning</h3>
+      <p>Neural Networks, CNN, RNN, model building using TensorFlow & PyTorch.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data Analysis</h3>
+      <p>Data cleaning, visualization and insights using NumPy, Pandas & Matplotlib.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI Tools & APIs</h3>
+      <p>Working with AI APIs, automation tools and intelligent system integrations.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web Integration</h3>
+      <p>Deploying AI models into web apps using HTML, CSS, JavaScript & Python backend.</p>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 Shishir | AI Developer</footer>
+
+</body>
+</html>
